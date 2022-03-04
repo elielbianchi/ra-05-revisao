@@ -1,5 +1,9 @@
 # Prática 05 - revisão da semana
 
+### 0. Observações sobre o projeto pelo autor
+
+Durante a criação das branchs das features, de 1 a 4, foram erroneamente criadas a partir da branch main quando deveriam ser a partir da branch develop. Como naquele momento as branchs main e develop eram idênticas, foi dada sequência nas implementações obedecendo o git flow proposto. Para a branch da feature 5, foi criada a branch corretamente a partir da develop, e gostaria que esta fosse observada como o fluxo correto das features deste projeto.
+
 ### 1. complete as funções
 
 Na pasta `src/funcoes`, os arquivos listados abaixo definem funções utilitárias, que foram apenas definidas, através de sua assinatura e os comentários que as acompanham. Você deve completar as funções definidas, de forma que elas funcionem corretamente. Para testar estas funções, você pode utilizar as funções de `test...`, que estão construídas no arquivo `src/index.ts`. Caso houver algum erro de implementação das funções solicitadas, mensgens deverão aparecer em seu terminal indicando o erro.
