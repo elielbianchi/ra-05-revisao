@@ -97,7 +97,7 @@ async function testFila() {
     await escreveNaFila(mensagem);
   }
 
-  const mensagensEscritas = await leArquivo(() => {});
+  const mensagensEscritas = await leArquivo();
   const todasMensagensEscritas = mensagensEscritas
     .split('\n')
     .every((mensagem, index) => mensagem === mensagens[index]);
@@ -109,6 +109,7 @@ async function testFila() {
     console.assert(encontrada === menssagem, 'mensagem esperada não encontrada');
   }
 }
+
 
 testChunk();
 testCompact();
