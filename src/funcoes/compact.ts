@@ -9,5 +9,8 @@
  * @returns somente os itens definidos.
  */
  export const compact = (items: unknown[]): unknown[] => {
-  return null;
+  
+  const afterCompact: unknown[] = [...items.filter(Boolean)];
+
+  return afterCompact;
 };

@@ -12,5 +12,11 @@
  * @returns 
  */
 export const chunk = (valores: number[], tamanho: number): number[][] => {
-  return null;
+  const beforeChunk: number[] = [...valores];
+  const afterChunk: number[][] = [];
+
+  while(beforeChunk.length > 0) {
+    afterChunk.push(beforeChunk.splice(0, tamanho));
+  }
+  return afterChunk;
 };
